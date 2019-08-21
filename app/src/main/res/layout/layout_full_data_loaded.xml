@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="30dp"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+
+     <View
+         android:background="@color/e"
+         android:layout_width="60dp"
+         android:layout_height="1dp" />
+      <TextView
+          android:gravity="center"
+          android:textColor="@color/text_646464"
+          style="@style/text_style_14sp"
+          android:layout_weight="1"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:text="已加载全部数据"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/e"
+         android:layout_width="60dp"
+         android:layout_height="1dp" />
+
+</LinearLayout>

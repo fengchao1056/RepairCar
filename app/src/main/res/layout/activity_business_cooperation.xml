@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.BusinessCooperationActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <!--姓       名-->
+
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+     >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style_14sp"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="姓       名"
+                android:textColor="@color/text_323232" />
+
+            <EditText
+                android:id="@+id/et_master_name"
+                style="@style/text_style_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:hint="请输入姓名" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_eeeeee"></View>
+        <!--姓       名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style_14sp"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="联系电话"
+                android:textColor="@color/text_323232" />
+
+            <EditText
+                android:id="@+id/et_master_phone"
+                style="@style/text_style_14sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:digits="1234567890"
+                android:hint="请输入手机号码"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_eeeeee"></View>
+
+        <!--维修经验-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_style_14sp"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="合作内容"
+                android:textColor="@color/text_323232" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_hui">
+
+                <org.angmarch.views.NiceSpinner
+
+                    android:id="@+id/sp_master_experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false">
+
+                </org.angmarch.views.NiceSpinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_eeeeee"></View>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_login_selected"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+</LinearLayout>

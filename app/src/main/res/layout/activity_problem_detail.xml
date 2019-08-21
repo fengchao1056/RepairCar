@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.mine.ProblemDetailActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_style_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_101010" />
+
+        <TextView
+            android:layout_marginBottom="30dp"
+            android:id="@+id/tv_text"
+            style="@style/text_style_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/_6" />
+    </LinearLayout>
+
+      <View
+          android:background="@color/e"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"></View>
+
+
+</LinearLayout>

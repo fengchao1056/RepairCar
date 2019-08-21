@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/baidu_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:text="百度地图"/>
+    <View
+        android:background="@color/view_eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <Button
+        android:id="@+id/gaode_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:text="高德地图"/>
+    <View
+        android:background="@color/view_eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <Button
+        android:id="@+id/tencent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:text="腾讯地图"/>
+    <View
+        android:background="@color/view_eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <Button
+        android:id="@+id/cancel_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_white"
+        android:text="取消"/>
+
+</LinearLayout>

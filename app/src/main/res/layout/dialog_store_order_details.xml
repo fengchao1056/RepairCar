@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_master_name"
+                    style="@style/text_style_14sp"
+                    android:textColor="@color/txt_3b3b3b"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/iv_star_one" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_store_star"
+                    style="@style/text_style_13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="5.0"
+                    android:textColor="@color/txt_9D9D9D" />
+
+                <TextView
+                    android:id="@+id/tv_order_num"
+                    android:layout_marginLeft="15dp"
+                    style="@style/text_style_14sp"
+                    android:textColor="@color/txt_3b3b3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/text_646464"
+                    style="@style/text_style_14sp"
+                    android:text="维修经验"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/text_646464"
+                    style="@style/text_style_14sp"
+                    android:text="电话"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_master_phone"
+                    android:textColor="@color/text_646464"
+                    style="@style/text_style_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.nengyuanbox.repaircar.view.CircleImageView
+            android:id="@+id/iv_imagehead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/text_646464"
+                style="@style/text_style_14sp"
+                android:text="接单类型"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_take_order_type"
+                android:textColor="@color/text_646464"
+                style="@style/text_style_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_invite_setlled"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="邀请入驻"
+            android:textColor="@color/white"
+            android:background="@drawable/button_orange_shape"
+            android:layout_width="80dp"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textview_hui"></View>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <com.tencent.tencentmap.mapsdk.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/il_title" />
+
+    <include
+        android:id="@+id/il_title"
+        layout="@layout/toobar_return_white"></include>
+
+    <com.nengyuanbox.repaircar.utils.RxTextViewVerticalMore
+        android:id="@+id/upview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il_title" />
+
+    <ImageView
+        android:id="@+id/iv_mine"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/icon_mine" />
+
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upview1">
+
+        <RadioGroup
+            android:padding="1dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/button_orange_shape"
+            android:id="@+id/rp_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_master"
+                android:checked="true"
+                android:textColor="@drawable/selector_tab_text"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                 android:background="@drawable/selector_rb_orange"
+                android:button="@null"
+                android:gravity="center"
+                android:text="师傅" />
+            <RadioButton
+                android:id="@+id/rb_consumer"
+                android:background="@drawable/selector_rb_orange"
+                android:textColor="@drawable/selector_tab_text"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="消费者" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

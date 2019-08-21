@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.registered.StoreSubmittedSuccessfullyActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <TextView
+        style="@style/text_style_28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="提交成功"
+        android:textColor="@color/txt_101010" />
+
+
+    <TextView
+        android:text="工作人员将在24小时内与您联系
+请您保持13426377466号码畅通。
+
+如认证不通过，
+认证费用会在48小时内退回支付账户。"
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+       />
+
+</LinearLayout>

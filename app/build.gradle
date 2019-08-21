@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.nengyuanbox.repaircar"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+
+        signingConfigs {
+
+            release {
+                //.jks文件放在项目目录
+                storeFile file('D:/RepairCar/repaircar.jks')
+                storePassword "123123"
+                keyAlias "repaircar"
+                keyPassword "123123"
+            }
+            debug {
+                //.jks文件放在项目目录
+                storeFile file('D:/RepairCar/repaircar.jks')
+                storePassword "123123"
+                keyAlias "repaircar"
+                keyPassword "123123"
+            }
+        }
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'arm64-v8a', 'armeabi', 'x86'
+
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions { exclude 'META-INF/rxjava.properties' }
+
+
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+
+    //    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+
+    //        exclude group: 'com.android.support', module: 'support-annotations'
+
+    //    })
+//    configurations {
+//        all*.exclude group: 'com.google.code.gson'
+//    }
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.+'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //     黄油刀
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:recyclerview-v7:28.+'
+    implementation 'com.android.support:design:28.+'
+
+    //版本随意（非必须，引用可以解决无法预览问题）
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.alibaba:fastjson:1.2.47'
+
+    //    轮播图
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.android.support:cardview-v7:28.+'
+
+    //    萬能适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+    //    解决65536问题
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+
+    //    网络请求框架
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+
+    //    implementation files('libs/BASE64Encoder.jar')
+    implementation 'com.google.android:flexbox:0.2.6'
+//    implementation 'com.blankj:utilcode:1.9.1'
+    implementation 'com.github.vondear.RxTool:RxKit:v2.2.7'
+    implementation 'com.github.YancyYe:GalleryPick:1.2.1'
+    implementation 'com.vise.xiaoyaoyou:viselog:1.0.0'
+
+    //    implementation 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.zhy:okhttputils:2.6.2'
+
+    /*
+                * 腾讯地图    这里始终使用最新的稳定版本，用户也可以指定 4.0.3.2 之后的地图 sdk 版本号
+                * */
+    implementation 'com.tencent.map:tencent-map-vector-sdk:latest.release'
+    implementation files('libs/TencentMapSDK_Raster_v_1.3.2.jar')
+
+    //      刷新框架
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-21'
+
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-21'
+
+    //     微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    implementation files('libs/libammsdk.jar')
+    implementation files('libs/TencentLocationSdk_v7.1.5_rfaa15929_20190301_144850.jar')
+
+    //    人脸识别
+//    implementation(name: 'AuthSdk', ext: 'aar')
+    implementation 'com.github.arcadefire:nice-spinner:1.3.8'
+
+    //    权限库
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.0'
+//    implementation files('libs/alipaySdk-20170922.jar')
+    implementation project(':zxinglibrary')
+//    Switch Button小部件
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+//    记载巨图
+//    implementation 'com.shizhefei:LargeImageView:1.1.0'
+//    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+//    implementation 'com.github.yangkun19921001:long_picture_view:1.0.2'
+    implementation 'com.shizhefei:LargeImageView:1.1.0'
+    implementation 'com.github.SherlockGougou:BigImageViewPager:v3_4.0.2'
+}

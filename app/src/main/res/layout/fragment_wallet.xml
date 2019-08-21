@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_style_14sp"
+            android:layout_width="79dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="账户余额"
+            android:textColor="@color/txt_3b3b3b" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text_style_13sp"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="￥"
+                android:textColor="@color/txt_3b3b3b" />
+
+            <TextView
+                android:id="@+id/tv_wallet"
+                style="@style/text_style_28sp"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:gravity="center"
+                android:text="*******"
+                android:textColor="@color/txt_red" />
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_style_13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="提现至微信零钱"
+            android:textColor="@color/txt_3b3b3b" />
+
+        <Button
+            android:id="@+id/bt_withdraw"
+            style="@style/text_style_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_orange_shape"
+            android:text="提现"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_details"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style_14sp"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="账户明细"
+            android:textColor="@color/txt_3b3b3b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/iv_return" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

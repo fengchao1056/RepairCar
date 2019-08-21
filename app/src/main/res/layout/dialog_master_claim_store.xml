@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_style_14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="您收到一条入驻邀请"
+            android:textColor="@color/txt_red" />
+
+        <Button
+            android:id="@+id/bt_invite_setlled"
+            style="@style/text_style_14sp"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_orange_shape"
+            android:gravity="center"
+            android:text="同意入驻"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_store_name"
+                style="@style/text_style_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_323232" />
+
+            <TextView
+                android:id="@+id/tv_store_address"
+                style="@style/text_style_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_323232" />
+
+
+        </LinearLayout>
+
+        <com.nengyuanbox.repaircar.view.CircleImageView
+            android:id="@+id/iv_imagehead"
+            android:layout_width="80dp"
+            android:layout_height="81dp"
+
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+
+</LinearLayout>

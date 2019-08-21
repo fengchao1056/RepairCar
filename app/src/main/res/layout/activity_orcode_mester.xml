@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.ORCodeActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:id="@+id/tv_character"
+                            style="@style/text_style_14sp"
+                            android:textColor="@color/txt_101010"
+                            android:text="认证师傅"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/iv_star_one"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_star"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/txt_9D9D9D"
+                            style="@style/text_style_13sp"
+                            android:text="0.0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_order_name"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/txt_9D9D9D"
+                            style="@style/text_style_13sp"
+                            android:text="0单"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/txt_101010"
+                        style="@style/text_style_20sp"
+                        android:text="能源宝 周芳"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_my_phone"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/txt_bbbbbb"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <com.nengyuanbox.repaircar.view.CircleImageView
+                    android:id="@+id/iv_imagehead"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moren" />
+
+
+            </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_my_scon"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="260dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_or_txt"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        style="@style/text_style_12sp"
+        android:text="请师傅扫描以上推广码入驻赚取推广费"
+        android:textColor="@color/txt_bbbbbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tv_change_or"
+           android:layout_marginTop="30dp"
+           android:gravity="center_vertical"
+           android:layout_gravity="center"
+           android:text="切换到我的评价码赚取积分"
+           android:textColor="@color/txt_447ED9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+
+       <Button
+           android:id="@+id/bt_share"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:background="@drawable/button_hui"
+           android:text="分享我的二维码"
+           android:textColor="@color/txt_447ED9"
+           android:layout_width="180dp"
+           android:layout_height="30dp" />
+
+
+</LinearLayout>

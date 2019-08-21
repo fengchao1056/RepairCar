@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.ORCodeActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/txt_101010"
+                        style="@style/text_style_20sp"
+                        android:text="****"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_my_phone"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/txt_bbbbbb"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <com.nengyuanbox.repaircar.view.CircleImageView
+                    android:id="@+id/iv_imagehead"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/moren" />
+
+
+            </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_my_scon"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="260dp" />
+    
+
+
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nengyuanbox.repaircar">
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 访问网络，某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问WiFi状态，需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 修改WiFi状态，发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络状态, 检测网络的可用性，需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 访问手机当前状态, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 从sdcard中读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 腾讯地图 SDK 要求的权限(开始) -->
+
+
+    <!-- 需要外部存储写权限用于保存地图缓存 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 腾讯地图 SDK 要求的权限(结束) -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".app.CommApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.StoreMainActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="5186b42d69" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.0.0" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="APP_Channel" />
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="true" />
+        <!-- 腾讯地图 -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="D5NBZ-RMFKI-JH2GC-5BD7V-QCBGE-ABB6Y" />
+
+        <activity android:name=".activity.registered.MasterCertificationActivity" />
+        <activity android:name=".activity.registered.MasterSuccessfulActivity" />
+        <activity android:name=".activity.registered.StoreSuccessfulActivity" />
+        <activity android:name=".activity.registered.MasterCardCertificationActivity" />
+        <activity android:name=".activity.registered.MastPaymentActivity" />
+        <activity
+            android:name=".activity.registered.StoreCertificationActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.registered.StoreMapActivity" />
+        <activity android:name=".activity.registered.StoreImgActivity" />
+        <activity android:name=".activity.registered.StorePaymentActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <!-- android8.0需要的配置，主要是调用相机 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nengyuanbox.repaircar.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity
+            android:name=".activity.mine.MineActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.mine.OrderActivity" />
+        <activity android:name=".activity.mine.GoodPayOrderActivity" />
+        <activity android:name=".activity.mine.H5AppWeb" />
+        <activity android:name=".activity.mine.OrderDetailsActivity" />
+        <activity android:name=".activity.mine.WalletActivity" />
+        <activity android:name=".activity.mine.AccountDetailsActivity" />
+        <activity android:name=".activity.mine.CommonProblemActivity" />
+        <activity android:name=".activity.mine.ORCodeActivity" />
+        <activity android:name=".activity.mine.ORCodeMasterActivity" />
+        <!-- 微信登录配置 start -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/wx_login_style" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.registered.StoreMapSearchActivity" />
+        <activity android:name=".activity.registered.StorBusinessLicenseActivity" />
+        <activity android:name=".activity.registered.StoreSubmittedSuccessfullyActivity" />
+        <activity android:name=".activity.mine.SwitchIdentityActivity" />
+        <activity android:name=".activity.mine.ProblemDetailActivity" />
+        <activity android:name=".activity.mine.WithdrawActivity" />
+        <activity android:name=".activity.mine.VoucherExpiredActivity" />
+        <activity android:name=".activity.mine.CheckLoginActivity" />
+        <activity android:name=".activity.mine.BusinessCooperationActivity" />
+        <activity android:name=".activity.mine.AmendStoreCertificationActivity" />
+        <activity android:name=".activity.goods.EventGoodsActivity" />
+        <activity android:name=".activity.goods.SettlementActivity" />
+        <activity android:name=".activity.goods.AddAddressActivity" />
+        <activity android:name=".activity.goods.OrderDetailActivity" />
+        <activity android:name=".activity.goods.ProvinceActivity" />
+        <activity android:name=".activity.goods.CityActivity" />
+        <activity android:name=".activity.goods.AreaActivity" />
+        <activity android:name=".activity.goods.ModifyAddressActivity" />
+        <activity android:name=".activity.goods.GoodsDetailActivity" />
+        <activity android:name=".activity.goods.AddressListActivity" />
+        <activity android:name=".activity.goods.EditAddressActivity" />
+
+        <!-- <meta-data android:name="com.bop.dehong.config.DeHongGlideModule" android:value="GlideModule"/> -->
+        <activity android:name=".activity.mine.RespectingActivity" />
+
+        <!-- 配置glide加载https所需要的GlideModule -->
+        <!-- <meta-data -->
+        <!-- android:name="com.nengyuanbox.repaircar.utils.glide.OkHttpGlideModule" -->
+        <!-- android:value="GlideModule"/> -->
+
+        <activity android:name=".activity.goods.NoPaymentListActivity" />
+        <activity android:name=".activity.mine.ChargesActivity" />
+        <activity android:name=".activity.mine.PayOrderDetailsActivity" />
+        <activity android:name=".activity.mine.StoreInfoActivity" />
+        <activity android:name=".activity.mine.MyMasterActivity" />
+        <activity android:name=".activity.mine.MyStoreInfoActivity" />
+        <activity android:name=".activity.mine.InvalidVoucherActivity" />
+        <activity android:name=".activity.mine.GoodsPayCompleteActivity"></activity>
+    </application>
+
+</manifest>

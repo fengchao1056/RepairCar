@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.goods.GoodsDetailActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/br_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </com.youth.banner.Banner>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    style="@style/text_style_14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="经典口味，口感醇厚 金爸爸经典10条装"
+                    android:textColor="@color/txt_101010" />
+
+                <TextView
+                    android:id="@+id/tv_goods_num"
+                    style="@style/text_style_14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:gravity="center_vertical"
+                    android:text="已售***件"
+                    android:textColor="@color/txt_666466" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="66.6"
+                        android:textColor="@color/txt_red" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_oldpeice"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_weight="1"
+                        android:text="66.6"
+                        android:textColor="@color/txt_666466" />
+
+                    <TextView
+                        android:id="@+id/tv_goods_number"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="**人已买"
+                        android:textColor="@color/txt_101010" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:tabBackground="@color/white"
+                app:tabIndicatorColor="@color/txt_525252"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/txt_525252"
+                app:tabTextColor="@color/text_646464">
+
+            </android.support.design.widget.TabLayout>
+
+
+            <com.nengyuanbox.repaircar.view.MyViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            </com.nengyuanbox.repaircar.view.MyViewPager>
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/vp_pager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</android.support.v4.view.ViewPager>>-->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/bt_buy"
+        style="@style/text_style_16sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/button_red_shape"
+        android:text="立即购买"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

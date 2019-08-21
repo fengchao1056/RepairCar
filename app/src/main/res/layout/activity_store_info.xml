@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.StoreInfoActivity">
+    <include layout="@layout/toobar_return_white"></include>
+
+      <LinearLayout
+          android:padding="15dp"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:textColor="@color/text_323232"
+                  style="@style/text_style_14sp"
+                  android:text="店铺信息"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_store_name"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/text_323232"
+                  style="@style/text_style_14sp"
+                 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <ImageView
+                  android:layout_width="15dp"
+                  android:layout_height="15dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="5dp"
+                  android:src="@mipmap/iv_star_one" />
+              <TextView
+                  android:layout_weight="1"
+                  android:id="@+id/tv_store_star"
+                  style="@style/text_style_13sp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:text=""
+                  android:textColor="@color/txt_9D9D9D" />
+
+              <ImageView
+                  android:id="@+id/iv_modify"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:src="@drawable/modify"
+                  />
+
+
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                  android:text="业务电话"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_store_phone"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                  android:text="门店类型"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_store_type"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                  android:text="门店地址"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_store_address"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginTop="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                  android:text="维修类型"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:id="@+id/tv_repair_type"
+                  android:layout_marginLeft="15dp"
+                  android:textColor="@color/txt_3b3b3b"
+                  style="@style/text_style_14sp"
+                 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+
+
+
+
+      </LinearLayout>
+    
+    
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_store_img"
+        android:layout_width="match_parent"
+        android:layout_height="162dp" />
+
+
+
+</LinearLayout>

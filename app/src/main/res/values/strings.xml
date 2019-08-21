@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">来修车</string>
+
+    <string name="load_more">加载中...</string>
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="net_error">当前网络不可用，请先连接网络！</string>
+    <string name="passwd_error">密码只能由数字或字母组成，不能包含特殊字符</string>
+    <string name="onfailure">连接失败</string>
+    <string name="mobile_error">"请检查手机号码"</string>
+    <string name="login_agreement">"未同意协议"</string>
+    <string name="get_verification_code">发送验证码</string>
+
+    <string-array name="repair_type">
+        <item>1年</item>
+        <item>2年</item>
+        <item>3年</item>
+        <item>4年</item>
+        <item>5年以上</item>
+    </string-array>
+
+    <string-array name="store_type">
+        <item>整车行</item>
+        <item>电动/摩托维修</item>
+        <item>汽车维修</item>
+        <item>新能源车维修</item>
+    </string-array>
+
+    <string name="hint_login_password">输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="login_expired">用户登录已过期，请重新登录</string>
+    <string name="request_err">与服务器连接失败</string>
+</resources>

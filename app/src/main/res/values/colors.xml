@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="maincolor">#fd6103</color>
+    <color name="maincolors">#F79934</color>
+
+    <!-- IOS7风格对话框  -->
+    <color name="trans">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#51AC33</color>
+    <color name="gallery_blue">#51AC33</color>
+    <color name="actionsheet_red">#fd6103</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="text_646464">#646464</color>
+    <color name="text_909090">#909090</color>
+    <color name="text_323232">#323232</color>
+    <color name="text_3B3B3B">#3B3B3B</color>
+    <color name="textview_hui">#D7D7D7</color>
+    <color name="view_eeeeee">#eeeeee</color>
+    <color name="txt_main_dddddd">#dddddd</color>
+    <color name="txt_447ED9">#447ED9</color>
+    <color name="txt_red">#E51C23</color>
+    <color name="txt_orange">#fd6103</color>
+    <color name="txt_DFDEDE">#DFDEDE</color>
+    <color name="txt_447ed9">#447ED9</color>
+    <color name="txt_9D9D9D">#9D9D9D</color>
+    <color name="colorTextPrimaryMoreLight">#979797</color>
+    <color name="txt_3b3b3b">#3B3B3B</color>
+    <!-- 浅橘色背景 -->
+    <color name="colorLableBg">#F9E9E4</color>
+    <!-- 橘色 -->
+    <color name="colorOrange">#fd6103</color>
+    <color name="txt_FDC066">#FDC066</color>
+    <color name="f6">#f6f6f6</color>
+    <color name="_6">#666666</color>
+    <color name="_9">#999999</color>
+    <color name="f0">#f0f0f0</color>
+    <color name="e">#EEEEEE</color>
+    <color name="f0efef">#F0EFEF</color>
+
+    <color name="c">#CCCCCC</color>
+    <color name="_8c">#8c8c8c</color>
+    <color name="a5">#A5A5A5</color>
+    <color name="txt_101010">#101010</color>
+    <color name="txt_bbbbbb">#bbbbbb</color>
+    <color name="txt_666466">#666466</color>
+    <color name="txt_108ee0">#108ee0</color>
+    <color name="bg_fafafa">#fafafa</color>
+    <color name="txt_525252">#525252</color>
+    <color name="txt_3f51b5">#3f51b5</color>
+</resources>

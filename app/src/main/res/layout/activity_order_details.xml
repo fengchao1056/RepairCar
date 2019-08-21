@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.OrderDetailsActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_repair_time_start"
+                        style="@style/text_style_14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:text="******"
+                        android:textColor="@color/txt_3b3b3b" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_repair_time_end"
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="******"
+                            android:textColor="@color/txt_9D9D9D" />
+                        <TextView
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/tv_repair_state"
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="******"
+                            android:textColor="@color/txt_9D9D9D" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="上门服务费："
+                            android:textColor="@color/txt_9D9D9D" />
+
+                        <TextView
+                            android:id="@+id/tv_repair_money"
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="*元"
+                            android:textColor="@color/txt_9D9D9D" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="客户评价："
+                            android:textColor="@color/txt_9D9D9D" />
+
+                        <TextView
+                            android:id="@+id/tv_repair_star"
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="*"
+                            android:textColor="@color/txt_9D9D9D" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@mipmap/iv_star_one" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_order_receiving_master"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:text="接单师傅："
+                            android:textColor="@color/txt_9D9D9D" />
+
+                        <TextView
+                            android:id="@+id/tv_order_receiving_master"
+                            style="@style/text_style_13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="*元"
+                            android:textColor="@color/txt_9D9D9D" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_bt_submit"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/bt_set_off"
+                            style="@style/text_style_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_orange_shape"
+                            android:gravity="center"
+                            android:text="出发"
+                            android:textColor="@color/white" />
+                        <Button
+                            android:id="@+id/bt_cancel"
+                            android:layout_marginLeft="15dp"
+                            style="@style/text_style_12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_blue"
+                            android:gravity="center"
+                            android:text="撤销"
+                            android:textColor="@color/txt_447ED9" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_complaint"
+                        style="@style/text_style_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_blue"
+                        android:gravity="center"
+                        android:text="投诉账单"
+                        android:textColor="@color/txt_447ED9" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_orderdetails"></include>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

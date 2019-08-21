@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="95dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+         android:layout_margin="10dp"
+        android:background="@drawable/shape_evaluate_item"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="态度很好"
+        android:lines="1"
+        android:textColor="@color/colorTextPrimaryMoreLight"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.mine.CommonProblemActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+
+    <EditText
+        android:id="@+id/et_hunk"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_hui"
+        android:drawableRight="@mipmap/icon_sousuo"
+        android:hint="有问题搜一下"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:paddingRight="8dp"
+        android:phoneNumber="true"
+        android:singleLine="true"
+        android:textColor="@color/text_646464"
+        android:textColorHint="@color/txt_bbbbbb"
+        android:textSize="13dp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_weight="1"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_problem_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.nengyuanbox.repaircar.view.ContainsEmojiEditText
+            android:id="@+id/et_reason"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="问题描述(选填)"
+            android:maxLength="200"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/_9"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_question"
+            style="@style/text_style_14sp"
+            android:layout_width="300dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_blues"
+            android:gravity="center"
+            android:text="提问"
+            android:textColor="@color/e" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_question_activity"
+        style="@style/text_style_14sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_blues"
+        android:gravity="center"
+        android:text="提问"
+        android:textColor="@color/e" />
+
+</LinearLayout>

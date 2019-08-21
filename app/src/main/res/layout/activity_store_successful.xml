@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.registered.SuccessfulCertificationActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+    <TextView
+        style="@style/text_style_28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="认证成功"
+        android:textColor="@color/txt_101010" />
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="恭喜您已通过实名认证为“来修车“认证门店！
+用户可以根据任何一个导航系统找到您的店铺！
+
+
+以下为您的服务二维码，
+分享该二维码给同行，
+同行注册成功，您将获得高额现金返现。
+
+该二维码在“个人中心“点击您的头像可随时查看。"
+      />
+
+
+    <ImageView
+        android:id="@+id/iv_my_scon"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="分享我的二维码给同行"
+        android:textColor="@color/txt_447ED9" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="去认领我家师傅"
+        android:textColor="@color/txt_447ED9" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.goods.EventGoodsActivity">
+
+    <include layout="@layout/toobar_return_white"></include>
+
+
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/text_style_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="核销电池券获得可买数量"
+                android:textColor="@color/txt_red" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_processed_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+            </android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_go_nengyuanbox"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:textColor="@color/txt_3f51b5"
+                    style="@style/text_style_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="需要更多配件，点击登陆能源宝采购系统" />
+
+                <TextView
+                    android:id="@+id/tv_no_payment"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:textColor="@color/txt_3f51b5"
+                    style="@style/text_style_12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品未支付列表" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Translate" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+</LinearLayout>
